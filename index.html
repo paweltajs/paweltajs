@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>paweltajs.com — Website Under Construction</title>
+  <style>
+    :root {
+      --bg-color: #f9fafb;
+      --text-color: #1f2937;
+      --muted-color: #6b7280;
+      --accent-color: #2563eb;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .spinner {
+      margin: 2em auto;
+      border: 4px solid #e5e7eb;
+      border-top: 4px solid var(--accent-color);
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.3em;
+    }
+
+    p {
+      color: var(--muted-color);
+      font-size: 1.05rem;
+      margin-bottom: 2em;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 0.95rem;
+      color: var(--muted-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="spinner"></div>
+  <h1>🚧 Website Under Construction</h1>
+  <p>More information coming soon.</p>
+  <footer>
+    Connect with me on <a href="https://www.linkedin.com/in/paweltajs" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+  </footer>
+</body>
+</html>
